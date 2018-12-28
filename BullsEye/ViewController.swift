@@ -24,5 +24,14 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
 
+    @IBAction func showJokeAlert(){
+        
+        let alert = UIAlertController(title: "Knock, knock", message: "Whose There?", preferredStyle: .actionSheet)
+        
+        let action = UIAlertAction(title: "Little old lady.", style: .default, handler: nil)
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
+    }
 }
 
