@@ -9,7 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var infoButton: UIButton!
+    @IBOutlet weak var startOverButton: UIButton!
+    @IBOutlet weak var scoreTextLabel: UILabel!
+    @IBOutlet weak var scoreNumericValue: UILabel!
+    @IBOutlet weak var roundNumberValue: UILabel!
+    @IBOutlet weak var roundTextLabel: UILabel!
+    @IBOutlet weak var randomTargetValue: UILabel!
+    
+    @IBOutlet weak var minSliderValue: UILabel!
+    
+    
+    @IBOutlet weak var maxSliderValue: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,14 +35,6 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
 
-    @IBAction func showJokeAlert(){
-        
-        let alert = UIAlertController(title: "Knock, knock", message: "Whose There?", preferredStyle: .actionSheet)
-        
-        let action = UIAlertAction(title: "Little old lady.", style: .default, handler: nil)
-        alert.addAction(action)
-        
-        present(alert, animated: true, completion: nil)
-    }
+
 }
 
