@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+        var currentValue: Int = 0
+        var targetValue: Int = 0
+    
     @IBOutlet weak var infoButton: UIButton!
     @IBOutlet weak var startOverButton: UIButton!
     @IBOutlet weak var scoreTextLabel: UILabel!
@@ -16,25 +19,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var roundNumberValue: UILabel!
     @IBOutlet weak var roundTextLabel: UILabel!
     @IBOutlet weak var randomTargetValue: UILabel!
-    
     @IBOutlet weak var minSliderValue: UILabel!
-    
+    @IBOutlet weak var slider: UISlider!
+
     
     @IBOutlet weak var maxSliderValue: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let roundedValue = slider.value.rounded()
+        currentValue = Int(roundedValue)
+        targetValue = Int.random(in: 1...100)
+        randomTargetValue.text = String(targetValue)
+        
     }
     @IBAction func showAlert(){
-        //print("Hello!")
-        let alert = UIAlertController(title: "Hellow, World!", message: "This is my first app.", preferredStyle: .alert)
+        let message = "The value of the slider is now: \(currentValue)" + " \n The target value is now: \(targetValue)"
+        let alert = UIAlertController(title: "Hellow, World!", message: message, preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
     }
 
-
+    @IBAction func sliderMoved(_ slider: UISlider) {
+        let roundedValue = slider.value.rounded()
+        currentValue = Int(roundedValue)
+        
+    }
 }
 
