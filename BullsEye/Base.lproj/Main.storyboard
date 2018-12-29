@@ -106,13 +106,13 @@
                         <outlet property="infoButton" destination="xbR-9p-jUe" id="baY-08-VuX"/>
                         <outlet property="maxSliderValue" destination="dYL-1p-9jY" id="LEq-jI-Lo5"/>
                         <outlet property="minSliderValue" destination="0BH-0P-IZb" id="wNr-ki-2OF"/>
-                        <outlet property="randomTargetValue" destination="9Pu-fA-rDE" id="Tz6-Az-n8B"/>
                         <outlet property="roundNumberValue" destination="Tam-BK-D14" id="3Mx-vu-FTq"/>
                         <outlet property="roundTextLabel" destination="ZwM-52-4J6" id="lec-MU-pQD"/>
                         <outlet property="scoreNumericValue" destination="pMU-z8-POE" id="caK-ZC-Yrq"/>
                         <outlet property="scoreTextLabel" destination="XWa-jg-0Sk" id="0N4-4J-Efo"/>
                         <outlet property="slider" destination="InD-6M-MMi" id="zDY-gw-uNU"/>
                         <outlet property="startOverButton" destination="6i5-BJ-Ko8" id="FWK-iH-0eq"/>
+                        <outlet property="targetLabel" destination="9Pu-fA-rDE" id="Tz6-Az-n8B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
