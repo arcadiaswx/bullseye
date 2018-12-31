@@ -14,6 +14,7 @@
 		44CFBD4521D678C900EEFBFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CFBD4321D678C900EEFBFC /* LaunchScreen.storyboard */; };
 		44CFBD4D21D930EC00EEFBFC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CFBD4C21D930EB00EEFBFC /* AboutViewController.swift */; };
 		44CFBD4F21D934DA00EEFBFC /* AboutAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CFBD4E21D934DA00EEFBFC /* AboutAuthorViewController.swift */; };
+		44CFBD5121D959C200EEFBFC /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 44CFBD5021D959C200EEFBFC /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		44CFBD4621D678C900EEFBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44CFBD4C21D930EB00EEFBFC /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		44CFBD4E21D934DA00EEFBFC /* AboutAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorViewController.swift; sourceTree = "<group>"; };
+		44CFBD5021D959C200EEFBFC /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		44CFBD3921D678C600EEFBFC /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				44CFBD5021D959C200EEFBFC /* BullsEye.html */,
 				44CFBD3A21D678C600EEFBFC /* AppDelegate.swift */,
 				44CFBD4C21D930EB00EEFBFC /* AboutViewController.swift */,
 				44CFBD4E21D934DA00EEFBFC /* AboutAuthorViewController.swift */,
@@ -129,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44CFBD4521D678C900EEFBFC /* LaunchScreen.storyboard in Resources */,
+				44CFBD5121D959C200EEFBFC /* BullsEye.html in Resources */,
 				44CFBD4221D678C900EEFBFC /* Assets.xcassets in Resources */,
 				44CFBD4021D678C600EEFBFC /* Main.storyboard in Resources */,
 			);

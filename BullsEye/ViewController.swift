@@ -44,12 +44,14 @@ class ViewController: UIViewController {
         slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
         
         let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
-        
+
         let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
         let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)
         slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
         
-        let trackRightImage = #imageLiteral(resourceName: "SmallButton")
+        
+        
+        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
         let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
         slider.setMaximumTrackImage(trackRightResizable, for: .normal)
     }
